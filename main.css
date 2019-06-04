@@ -1,0 +1,143 @@
+body {
+  background-color:  #66c2ff;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #AD8A57;
+  text-shadow: 2px 2px black;
+}
+
+.container {
+  display: inline-grid;
+  grid: auto / auto auto auto;
+  align-self: center;
+}
+
+.nope {
+  background-image: url(media/island.png);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.treasure {
+  background-image: url(media/island.png);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.on:hover {
+  background-image:url(media/spyglass.png);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.treasure:active {
+  background-image: url(media/treasure.png);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nope:active {
+  background-image: url("media/skull.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: auto;
+  margin: 15px;
+  /*including the swing animation*/
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+footer {
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/*Swing aniomation on wrong guess that I found here: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
